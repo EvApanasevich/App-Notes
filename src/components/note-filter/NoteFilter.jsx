@@ -1,7 +1,6 @@
 import React from 'react';
 import Input from "../UI/input/Input";
 import Select from "../UI/select/Select";
-import s from "./NoteFilter.module.scss";
 
 const NoteFilter = ({ filter, setFilter }) => {
    return (

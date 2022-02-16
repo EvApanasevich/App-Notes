@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../button/Button';
 import s from "./Tag.module.scss";
 
 const Tag = ({ tag, removeTag, isList, filterNotesByTag, removeTempTag, isTemporary }) => {

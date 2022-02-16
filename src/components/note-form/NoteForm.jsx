@@ -67,8 +67,8 @@ const NoteForm = ({ isEdit, setIsEdit, note, createNote, updateNote, removeNote,
             setTagAddIsVisible(true)
             const arrWords = value.split('#')
 
-            if (arrWords[arrWords.length - 1].includes(' ') &&
-               !arrWords[arrWords.length - 1].includes('#') ||
+            if ((arrWords[arrWords.length - 1].includes(' ') &&
+               !arrWords[arrWords.length - 1].includes('#')) ||
                arrWords[arrWords.length - 1].length > 10) {
                setTagAddIsVisible(false)
             }
