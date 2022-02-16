@@ -1,0 +1,27 @@
+.login {
+   display: flex;
+   max-width: 1280px;
+   min-height: 95vh;
+
+   .login__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1280px;
+      padding: 0px 15px;
+      margin: 0 auto;
+      color: #525252;
+      font-size: 20px;
+      font-weight: normal;
+      box-sizing: content-box;
+
+      .login__container_text {
+         text-align: center;
+         padding: 20px;
+         color: #525252;
+      }
+   }
+}

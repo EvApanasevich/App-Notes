@@ -1,0 +1,16 @@
+.noteList {
+   display: flex;
+   align-items: center;
+
+   .noteList__container {
+      display: flex;
+      width: 100%;
+      max-width: 1280px;
+      flex-wrap: wrap;
+      box-sizing: content-box;
+   }
+}
+
+.message {
+   text-align: center;
+}

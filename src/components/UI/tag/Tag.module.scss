@@ -1,0 +1,28 @@
+.tag {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: min-content;
+   font-weight: 400;
+   border: 1px solid #525252;
+   border-radius: 15px;
+   padding: 1px 5px;
+   margin: 0px 5px 5px 0px;
+   box-sizing: content-box;
+
+   .tagName {
+      box-sizing: content-box;
+   }
+   .remove {
+      width: 15px;
+      height: 15px;
+      cursor: pointer;
+      background-image: url("../../../assets/images/delete.png");
+      background-size: cover;
+      background-position: center;
+      margin-left: 10px;
+   }
+}
+.list {
+   cursor: pointer;
+}

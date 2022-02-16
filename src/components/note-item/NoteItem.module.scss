@@ -1,0 +1,64 @@
+.note {
+   display: flex;
+   padding: 10px;
+   margin: 10px 20px 0px 0px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25), 0 2px 5px rgba(0, 0, 0, 0.22);
+   border-radius: 5px;
+   justify-content: space-between;
+   align-items: center;
+   box-sizing: content-box;
+   flex-wrap: wrap;
+   height: min-content;
+   max-width: 300px;
+   @media screen and (max-width: 767px) {
+      max-width: 270px;
+   }
+
+   .note__container {
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+
+      .note__title {
+         overflow-x: hidden;
+         padding: 3px 0px 10px 0px;
+         font-weight: 600;
+      }
+      .note__body {
+         display: flex;
+         width: 100%;
+         box-sizing: content-box;
+         flex-wrap: wrap;
+         word-wrap: break-word;
+         overflow-x: hidden;
+      }
+      .delAndEdit {
+         display: flex;
+         align-self: flex-end;
+
+         .delAndEdit__delete {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            background-image: url("../../assets/images/delete.png");
+            background-size: cover;
+            background-position: center;
+            margin-left: 5px;
+         }
+         .delAndEdit__edit {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            background-image: url("../../assets/images/edit.png");
+            background-size: cover;
+            background-position: center;
+            margin-left: 5px;
+         }
+      }
+      .tagsList {
+         display: flex;
+         flex-wrap: wrap;
+         padding-top: 5px;
+      }
+   }
+}

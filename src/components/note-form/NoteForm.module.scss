@@ -1,0 +1,52 @@
+.form {
+   display: flex;
+   flex-direction: column;
+   width: 300px;
+   border-radius: 5px;
+   @media screen and (max-width: 540px) {
+      width: 270px;
+}
+
+   .warning {
+      color: rgb(255, 115, 115);
+      padding: 5px;
+      font-size: 14px;
+   }
+   .createTag {
+      display: flex;
+      align-items: center;
+
+      .createTag__text {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         font-size: 14px;
+         padding: 5px;
+
+         .tagAndBtn {
+            display: flex;
+         }
+      }
+      .exampleTag {
+         color: rgb(255, 115, 115);
+         font-size: 16px;
+         font-weight: 600;
+         padding: 0px 10px 0px 5px;
+      }
+      .addTag {
+         width: 20px;
+         height: 20px;
+         cursor: pointer;
+         background-image: url("../../assets/images/add.png");
+         background-size: cover;
+         background-position: center;
+         border: none;
+      }
+   }
+
+   .tagsBlock {
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+   }
+}
