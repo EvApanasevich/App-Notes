@@ -36,9 +36,11 @@ const NoteItem = ({ removeNote, note, updateNote, createTag }) => {
                }
                <div className={s.note__title}>{note.title}</div>
                <div className={s.note__body}>{note.body}</div>
-               <div className={s.tagsList}>
-                  {note.tags.map(item => <Tag key={item.id} tag={item} removeTag={removeTag} />)}
-               </div>
+               {isFocus &&
+                  <div className={s.tagsList}>
+                     {note.tags.map(item => <Tag key={item.id} tag={item} removeTag={removeTag} />)}
+                  </div>
+               }
             </div>
          }
       </div>
